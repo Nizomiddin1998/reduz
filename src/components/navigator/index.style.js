@@ -37,6 +37,7 @@ export const NavLink = styled.a`
     width: 176.64px;
   }
   .nav-btn {
+    margin-top: 13px;
     font-family: 'DM Sans', sans-serif;
     transition: all .5s;
     background-color: transparent;

@@ -1,11 +1,14 @@
+import { Fragment } from 'react'
 import MainComponent from './main'
 import Navigation from './navigator'
+import { PanelComponent } from './panel'
 
 export default function AllComponents() {
     return (
-        <div>
+        <Fragment>
             <Navigation />
-            <MainComponent/>
-        </div>
+            <MainComponent />
+            <PanelComponent />
+        </Fragment>
     )
 }
