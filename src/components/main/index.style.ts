@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { systemColors } from "../../assets/styles/colors";
+import { animated } from "react-spring";
 
 export const MainProvider = styled.section`
   text-align: center;
@@ -58,7 +59,7 @@ export const MainBtn = styled.div`
   }
 `;
 
-export const MainPicture = styled.div`
+export const MainPicture = styled(animated.div)`
   width: 65%;
   margin: auto;
   img {

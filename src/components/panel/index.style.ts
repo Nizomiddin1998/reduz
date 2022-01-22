@@ -105,11 +105,14 @@ export const BottomRight = styled.div`
   }
   @media (max-width: 676px) {
       margin: 0;
+      width:100%;
       h1 {
           font-size: 16px;
           line-height: 20px;
+          width: 100%;
       }
       p {
+          width: 100%;
           font-size: 12px;
           margin: 0;
           line-height: 16px;

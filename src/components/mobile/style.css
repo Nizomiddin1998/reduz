@@ -1,0 +1,35 @@
+.container{
+    padding-top:260px;
+    padding-bottom:300px;
+  }
+  
+  section{
+    padding:100px 0;
+  }
+  
+  figure{
+    height:100%;
+    background-color:#ccc;
+  }
+  
+  .row .col-lg {
+    position: relative;
+  }
+  
+  .panels{
+    position:absolute;
+    overflow:hidden;
+    height:100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .panel{
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    background-color:#333;
+    transform: translateY(100%);
+  }
