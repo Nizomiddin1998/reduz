@@ -35,6 +35,9 @@ export const MainTitle = styled.div`
 
 export const MainBtn = styled.div`
   margin: 30.46px 0 50px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
   button {
     width: 184px;
     height: 56px;
@@ -73,8 +76,6 @@ export const MainContainer = styled.div`
   margin-top: 87px;
   .main-content-info {
     width: 93%;
-    position: relative;
-    /* border-right: 2px solid rgba(21, 20, 57, 0.4); */
   }
   p {
     font-family: "Dm Sans", sans-serif;
@@ -86,13 +87,32 @@ export const MainContainer = styled.div`
     text-align: center;
     position: relative;
     &:before {
-        position: absolute;
-        content: '';
-        right: -35px;
-        width: 2px;
-        height: 117px;
-        background:rgba(21, 20, 57, 0.4);
-        opacity: 0.3;
+      position: absolute;
+      content: "";
+      right: -35px;
+      width: 2px;
+      height: 117px;
+      background: rgba(21, 20, 57, 0.4);
+      opacity: 0.3;
     }
+  }
+  @media (max-width: 768px) {
+    .main-content-info {
+      display: none;
+    }
+    p {
+      &:before {
+        position: absolute;
+        content: "";
+        background: transparent;
+      }
+    }
+  }
+`;
+
+export const MainSliderProvider = styled.div`
+  display: none;
+  @media (max-width: 576px) {
+    display: block;
   }
 `;

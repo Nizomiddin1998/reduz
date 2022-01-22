@@ -4,7 +4,6 @@ import { systemColors } from "../../assets/styles/colors";
 export const AnswerProvider = styled.div`
   font-family: "DM Sans", sans-serif;
   margin-top: 135px;
-  margin-bottom: 200px;
   h1 {
     text-align: center;
     font-size: 39px;

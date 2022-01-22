@@ -5,4 +5,7 @@ body {
   overflow-x: hidden;
 }
 
-
+@font-face {
+  font-family: SfProDisplay;
+  src: url(./assets/fonts/sf_pro_display.ttf);
+}
