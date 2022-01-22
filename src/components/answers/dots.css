@@ -1,0 +1,19 @@
+.slick-dots li button {
+    background-color: none;
+}
+.slick-dots li.slick-active button:before {
+    color: transparent;
+    background-color: #25DAC5;
+}
+.slick-dots li button:before {
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.85);
+  border-radius: 12px;
+  flex: none;
+  order: 0;
+  color: white;
+  flex-grow: 0;
+  margin: 0px 16px;
+}
