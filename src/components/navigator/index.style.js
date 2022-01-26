@@ -60,7 +60,12 @@ export const NavLink = styled.a`
     &:focus {
       outline: none;
     }
-    
+  }
+  .language-select {
+    &:focus {
+      border: none !important;
+      box-shadow: none !important; 
+    }
   }
   @media (max-width: 576px) {
     img {

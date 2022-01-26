@@ -13,6 +13,7 @@ export const MobileViewProvider = styled.section`
   margin-top: 150px;
   h2 {
     font-size: 22px;
+    font-weight: 400;
     line-height: 26px;
     width: 55%;
     margin: 60px auto;
@@ -22,8 +23,12 @@ export const MobileViewProvider = styled.section`
   .scroll-animation {
     margin-top: 180px;
     margin-bottom: 60px;
-    h2 {
+    h1 {
       width: 100%;
+      color: ${systemColors.mainBlue};
+      font-size: 33px;
+      text-align: center;
+      font-weight: 400;
     }
     .image-wrapper {
       img {

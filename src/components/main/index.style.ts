@@ -45,7 +45,7 @@ export const MainBtn = styled.div`
   display: flex;
   justify-content: center;
   button {
-    width: 184px;
+    width: 200px;
     height: 56px;
     border: none;
     outline: none;
@@ -58,8 +58,9 @@ export const MainBtn = styled.div`
   }
   @media (max-width: 576px) {
     button {
-      width: 171px;
+      width: 185px;
       height: 45px;
+      font-size: 15px;
     }
   }
 `;

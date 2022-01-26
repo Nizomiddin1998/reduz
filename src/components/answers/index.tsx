@@ -5,33 +5,23 @@ import SlickCarousel from "../carousel"
 const questions = [
     {
         id: 1,
-        name: 'How the RedUz project works?',
-        description: 'The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.'
+        name: 'EduTizim platformasi vazifasi nima?',
+        description: 'O’quv markazingizda tizim qurishga yordam berish. Qog’oz va excel fayllardagi ma’lumotlarini bir joyda jamlab ish samaradorligini oshirishdan iborat'
     },
     {
         id: 2,
-        name: 'Do you provide hosting with Startup Framework?',
-        description: 'No, hosting is on you. You upload the result on your hosting via FTP or using other tools you like. You can use any server, just make sure it have a PHP installed in case if you need a contact form.'
+        name: 'O’quv markazingiz holatini analitika qilib beradi',
+        description: 'O’quv markaz rivojlanishi uchun hisobotlar juda muhim. EDUTIZIM orqali barcha hisobotlarni olib borasiz. O”quvchilaringiz, moliayviy va marketing hisobotlari orqali ishlaringizni rejalashtirishingiz mumkin'
     },
     {
         id: 3,
-        name: 'What exactly am I buying?',
-        description: 'You’re buying an access to the Startup Generator app to export ready-made templates with the rest source files included. It’s an online tool, not a software. For more details about generator’s workflow watch this tutorial.'
+        name: 'Mijozlar bilan ishlashni avtomatlashtiradi',
+        description: 'EDUTIZIM barcha manbalardan kelgan lidlarni hisoblasydi va ular bilan ishlashni avtomatlashtiradi'
     },
     {
         id: 4,
-        name: 'Are you planning to update Startup Framework?',
-        description: 'We are! Here is the changelog of changes we’ve made after the release. Thanks our clients who helped us to improve our product.'
-    },
-    {
-        id: 5,
-        name: 'How Startup Framework works?',
-        description: 'The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.'
-    },
-    {
-        id: 6,
-        name: 'Do you provide support for customers?',
-        description: 'Yes, we are. Please use our contact us form to chat with us. We DO NOT provide product support via Facebook, Twitter or others sources.'
+        name: 'Platformani Demo versiyasidan foydalanish mumkin.',
+        description: 'Platforma imkoniyatlaridan Demo versiyamiz orqali 14 kun davomida bepul foydalanishingiz mumkin'
     }
 ]
 export default function AnswerComponent() {
@@ -39,7 +29,7 @@ export default function AnswerComponent() {
     return (
         <AnswerProvider>
             <AnswerContainer className="container">
-                <h1>Your questions answered</h1>
+                <h1>Ko’p so’raladigan savollarga javoblar</h1>
                 <div className="row">
                     {
                         questions.map((question) => (

@@ -36,8 +36,8 @@ export default function MobileView() {
     <MobileViewProvider className="reveal-animation">
       <MobileContent className="container my-5 py-5">
         <h2>
-          Mobil qurilmalarda sizni ishingizni yanada osonlashtirildi. Endi
-          ortiqcha harakatlardan halos bo‘lasiz
+          Mobil dasturlarimiz sizni ishingizni yanada osonlashtirildi. Endi
+          ortiqcha harakatlarsiz ishlay olasiz
         </h2>
         <div className="row">
           <div className="col-lg-4 col-md-6">
@@ -81,15 +81,11 @@ export default function MobileView() {
           </div>
         </div>
       </MobileContent>
-      <div className="container scroll-animation">
-        <h2>
-          Buyurtmalarni onlayn boshqarish. Bu ajoyib shablonlarning katta
-          to'plami o'rganish uchun zerikarli bo'lmagan materiallarni yaratishga
-          yordam beradi. Muharrir tanlash uchun juda ko'p narsaga ega bo'ladi!
-        </h2>
+      {/* <div className="container scroll-animation">
+        <h1>Har bir hodim uchun qulay ishchi oynasi</h1>
         <div className="row">
           <div className="col-lg-6 col-md-6 col-12 mt-5">
-            <div className="image-wrapper" >
+            <div className="image-wrapper">
               <img src={FirstPanel} alt="first" />
             </div>
           </div>
@@ -99,7 +95,7 @@ export default function MobileView() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </MobileViewProvider>
   );
 }

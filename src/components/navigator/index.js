@@ -7,6 +7,7 @@ import {
   NavMenu,
 } from "./index.style";
 import { Twirl as Hamburger } from "hamburger-react";
+import Select from "react-select"
 import logoTip from "../../assets/icons/logo.svg"
 
 export default function Navbar() {
@@ -58,7 +59,12 @@ export default function Navbar() {
             <button className="nav-btn">Contacts</button>
           </NavLink>
           <NavLink to="/sign-up">
-            <button className="nav-btn">Uzbek</button>
+            {/* <button className="nav-btn">Uzbek</button> */}
+            {/* <Select className="nav-btn react-select" placeholder={"Uzbek"} /> */}
+            <select className="nav-btn  language-select">
+              <option value="uz">Uzbek</option>
+              <option value="en">English</option>
+            </select>
           </NavLink>
         </NavMenu>
       </Nav>

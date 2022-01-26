@@ -62,6 +62,9 @@ export const FooterInput = styled.input`
 export const ButtonGroup = styled.div`
   text-align: center;
   .btn-submit {
+    display: inline-flex;
+    align-items:center;
+    justify-content:center;
     width: 291px;
     height: 44px;
     background: ${systemColors.mainBtnColor};

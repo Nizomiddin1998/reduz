@@ -30,13 +30,13 @@ export default function MainComponent() {
     <MainProvider>
       <MainHeader>
         <MainTitle>
-          <Typing speed={30}>
-            <h1>A very convenient platform for your own training centers</h1>
+          <Typing speed={50}>
+            <h1>O’quv markazlar uchun boshqaruv tizimi</h1>
           </Typing>
         </MainTitle>
         <MainBtn>
           <button className="blob-btn">
-            Request a demo
+            Demo shaklini so’rash
             <span className="blob-btn__inner">
               <span className="blob-btn__blobs">
                 <span className="blob-btn__blob"></span>
@@ -80,24 +80,26 @@ export default function MainComponent() {
           <div className="col-lg-4 col-md-6 col-12">
             <div className="main-content-info">
               <p>
-                Startup Framework works on devices supporting Retina Display.
-                Feel the clarity in each pixel.
+                O’quv markazingizda tizim qurishda yordam beradi. Endi bemalol
+                mijozlaringiz va hodimlaringizni kuzatib tura olasiz. Ular
+                haqida barcha ma’lumotga ega bo’lasiz.
               </p>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 col-12">
             <div className="main-content-info">
               <p>
-                There are a lot of different components that will help you
-                create the perfect look and feel for your startup.
+                Endi hodimlaringiz uchun oylik hisoblash va ularga KPI belgilash
+                shart emas. EDUTIZIM sizga yordam beradi. Moliyaviy
+                hisobotlaringizni EDUTIZIM orqali oling
               </p>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 col-12">
             <div className="main-content-info">
               <p>
-                You can easily combine components in a variety ways for
-                different design projects. It’s easy!
+                Mijzolaringiz va hodimlaringiz uchun android ilovalar bor. Ular
+                orqali barcha ma’lumotlarga ega bo’lishadi
               </p>
             </div>
           </div>

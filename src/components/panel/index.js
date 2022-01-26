@@ -16,12 +16,14 @@ export function PanelComponent() {
       <PanelTop>
         <LeftSide>
           <div className="left-side-info">
-            <h3>Create your reader easily.</h3>
-            <h3>Get rid of excess</h3>
-            <h3>paperwork</h3>
+            <h3>Har bir o'quvchingiz bilan</h3>
+            <h3>oson ishlaysiz, ortiqcha</h3>
+            <h3>qog'ozlarsiz</h3>
             <p>
-              This I have produced as a scantling of Jack’s great eloquence and
-              the force of his reasoning upon such abstruse matters.
+              O’quvchingiz haqida to’liqroq ma’lumot yig’ish sizga foyda
+              keltiradi. Buning uchun esa exel va shu kabi fayllardan
+              foydalanish xavli, yo’qotib qo’yish ehtimoli bor. Shu sababdan bu
+              kabi malumotlarni saqlashda dasturlar qulaydir
             </p>
           </div>
         </LeftSide>
@@ -34,10 +36,13 @@ export function PanelComponent() {
           <img src={VerticalIPhoneX} alt="vertical-iphoneX" />
         </BottomLeft>
         <BottomRight>
-          <h1>Very easy visits for teachers</h1>
+          <h1>O’qituvchilar uchun qulaylik</h1>
           <p>
-            This little wandering journey, without settled place of abode, had
-            been so unpleasant to me, that my own house, as I called.
+            O’qituvchilarimiz o’quvchilarni bilim darajasini, darslarga
+            qatnashishini, davomatlarini va o’quv markaz bilan shartnomaga ko’ra
+            moliyaviy holatini real vaqt rejimida telefon orqali ko’rib tura
+            oladi. Bu esa sizga vaqt tejashga va mijozlar bilan samarali
+            ishlashingizda yordam beradi
           </p>
         </BottomRight>
       </PanelBottom>
