@@ -24,12 +24,17 @@ export const MainTitle = styled.div`
     width: 70%;
     margin: auto;
   }
-  @media (max-width: 576px) {
+  @media (max-width: 676px) {
     h1 {
       font-size: 26px;
       line-height: 37px;
       width: 100%;
       font-weight: 500;
+    }
+  }
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 22px;
     }
   }
 `;
@@ -65,9 +70,10 @@ export const MainPicture = styled(animated.div)`
   img {
     width: 100%;
   }
-  @media (max-width: 576px) {
+  @media (max-width: 676px) {
     width: 80%;
   }
+
   @media (max-width: 360px) {
     width: 90%;
   }

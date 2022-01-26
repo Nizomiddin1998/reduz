@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { systemColors } from "../../assets/styles/colors";
 
 export const PanelProvider = styled.div`
-  margin-top: 260px;
+  margin-top: 150px;
   font-family: "Dm Sans", sans-serif;
   position: relative;
   @media (max-width: 676px) {

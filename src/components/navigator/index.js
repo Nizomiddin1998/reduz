@@ -6,7 +6,7 @@ import {
   MobileIcon,
   NavMenu,
 } from "./index.style";
-import { Turn as Hamburger } from "hamburger-react";
+import { Twirl as Hamburger } from "hamburger-react";
 import logoTip from "../../assets/icons/logo.svg"
 
 export default function Navbar() {
@@ -37,9 +37,9 @@ export default function Navbar() {
         </NavLink>
         <MobileIcon onClick={handleClick} click={click}>
           <Hamburger
-            duration={0.8}
             rounded
-            size={20}
+            direction="right"
+            size={24}
             toggled={click}
             toggle={setClick}
           />

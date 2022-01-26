@@ -1,6 +1,6 @@
 .container{
-    padding-top:260px;
-    padding-bottom:300px;
+    /* padding-top:260px; */
+    /* padding-bottom:300px; */
   }
   
   section{
@@ -32,4 +32,11 @@
     top:0; left:0; right:0; bottom:0;
     background-color:#333;
     transform: translateY(100%);
+  }
+
+  .image-wrapper img {
+    width: 100%;
+  }
+  .image-wrapper:nth-child(2) {
+    margin-top: 100px;
   }
