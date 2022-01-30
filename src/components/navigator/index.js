@@ -46,16 +46,16 @@ export default function Navbar() {
           />
         </MobileIcon>
         <NavMenu onClick={handleClick} click={click}>
-          <NavLink href="#courses">
+          <NavLink href="#functions">
             <button className="nav-btn">Functions</button>
           </NavLink>
-          <NavLink href="#aboutUs">
+          <NavLink href="#customers">
             <button className="nav-btn">Our customers</button>
           </NavLink>
-          <NavLink to="/sign-up">
+          <NavLink href="#contact">
             <button className="nav-btn">Request a demo</button>
           </NavLink>
-          <NavLink to="/sign-up">
+          <NavLink href="#contact">
             <button className="nav-btn">Contacts</button>
           </NavLink>
           <NavLink to="/sign-up">

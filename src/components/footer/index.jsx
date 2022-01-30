@@ -79,7 +79,7 @@ export default function FooterComponent() {
     }
   }
   return (
-    <FooterProvider>
+    <FooterProvider id="contact">
       <FormTitle>Demo shaklini so‘rash</FormTitle>
       <form onSubmit={handleSubmit}>
         <FormInputProvider className="container">

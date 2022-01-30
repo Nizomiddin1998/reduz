@@ -12,7 +12,7 @@ import VerticalIPhoneX from "../../assets/images/panel/vertical_iphoneX.png";
 
 export function PanelComponent() {
   return (
-    <PanelProvider>
+    <PanelProvider id="functions">
       <PanelTop>
         <LeftSide>
           <div className="left-side-info">

@@ -9,7 +9,7 @@ import Ebay from "../../assets/images/partners_logo/Ebay.png";
 export default function Customers() {
   return (
     <CustomersProvider>
-      <div className="customer-header">
+      <div className="customer-header" id="customers">
         <h1>Our customers</h1>
       </div>
       <div className="partners-logo-group">
