@@ -6,11 +6,13 @@ import Facebook from "../../assets/images/partners_logo/Facebook.png";
 import Attlasian from "../../assets/images/partners_logo/Attlasian.png";
 import Disney from "../../assets/images/partners_logo/Disney.png";
 import Ebay from "../../assets/images/partners_logo/Ebay.png";
+import { useTranslation } from "react-i18next";
 export default function Customers() {
+  const {t} = useTranslation()
   return (
     <CustomersProvider>
       <div className="customer-header" id="customers">
-        <h1>Our customers</h1>
+        <h1>{t("costomers.costomers")}</h1>
       </div>
       <div className="partners-logo-group">
         <div className="partners-logo-header">

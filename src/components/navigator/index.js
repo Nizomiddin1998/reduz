@@ -9,8 +9,10 @@ import {
 import { Twirl as Hamburger } from "hamburger-react";
 import Select from "react-select"
 import logoTip from "../../assets/icons/logo.svg"
-
+import { useTranslation } from "react-i18next"
+import i18n from "../../i18n";
 export default function Navbar() {
+  const { t } = useTranslation()
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -29,6 +31,9 @@ export default function Navbar() {
   const handleClick = () => {
     setClick(!click);
   };
+  function changeLanguage(e){
+    i18n.changeLanguage(e.target.value)
+  }
 
   return (
     <div>
@@ -47,21 +52,21 @@ export default function Navbar() {
         </MobileIcon>
         <NavMenu onClick={handleClick} click={click}>
           <NavLink href="#functions">
-            <button className="nav-btn">Functions</button>
+            <button className="nav-btn">{t("navigation.functions")}</button>
           </NavLink>
           <NavLink href="#customers">
-            <button className="nav-btn">Our customers</button>
+            <button className="nav-btn">{t("navigation.customers")}</button>
           </NavLink>
           <NavLink href="#contact">
-            <button className="nav-btn">Request a demo</button>
+            <button className="nav-btn">{t("navigation.request")}</button>
           </NavLink>
           <NavLink href="#contact">
-            <button className="nav-btn">Contacts</button>
+            <button className="nav-btn">{t("navigation.contacts")}</button>
           </NavLink>
           <NavLink to="/sign-up">
             {/* <button className="nav-btn">Uzbek</button> */}
             {/* <Select className="nav-btn react-select" placeholder={"Uzbek"} /> */}
-            <select className="nav-btn  language-select">
+            <select className="nav-btn  language-select" onClick={changeLanguage}>
               <option value="uz">Uzbek</option>
               <option value="en">English</option>
             </select>

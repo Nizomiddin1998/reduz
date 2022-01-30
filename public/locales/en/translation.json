@@ -1,84 +1,51 @@
 {
-    "navigation": {
-      "olimpiads": "Olimpics",
-      "tests": "Tests",
-      "library": "Library",
-      "exam": "Exam",
-      "documents": "Documents"
-    },
-    "news": {
-      "News": "News",
-      "presidential_schools": "Presidential schools",
-      "creative_schools": "Creative schools",
-      "private_schools": "Private schools",
-      "country_schools": "Country schools",
-      "schools": "Schools",
-      "login_or_register": "Login or register",
-      "sign_up_info": "Sign up and find out how ready you are for the exams",
-      "sign_up": "Sign up",
-      "popular": "Popular",
-      "more": "More"
-    },
-    "authorization": {
-      "sign_up_to_take_full_advantage_of_the_site": "Sign up to take full advantage of the site",
-      "register": "Register",
-      "the_number_is_dialed_incorrectly": "Number entered incorrectly",
-      "name_is_dialed_incorrectly": "Name entered incorrectly",
-      "category": "Category",
-      "region": "Region",
-      "male": "Male",
-      "female": "Female",
-      "set_date": "Enter the date",
-      "use_of_the_site": "Use of the site",
-      "conditions": "Conditions",
-      "agree": "Agree",
-      "allready_register": "I am already registered",
-      "login": "Login",
-      "login_to_take_full_advantage_of_the_site": "Login to take full advantage of the site",
-      "new_user": "Are you a new user?",
-      "password_not_found": "Password entered incorrectly",
-      "password_did_you_forget": "Forgot password?"
-    },
-    "tests": {
-      "about_test": "About test",
-      "started_test": "Started test",
-      "questions": "Questions",
-      "test_results": "Test results",
-      "time_spent": "Time spent",
-      "correct_answers": "Correct answers",
-      "result": "Result",
-      "results": "Results",
-      "exit": "Exit",
-      "restart": "Restart",
-      "will_you_complete_the_test": "Will you complete the test?",
-      "no": "No",
-      "yes": "Yes",
-      "mathematics": "Mathematics",
-      "time_left": "Time left",
-      "participants": "Participants",
-      "complete": "Complete",
-      "total": "Total",
-      "test": "Test",
-      "completed": "Completed",
-      "data_is_not_available": "Data is not available...",
-      "sign_up_to_start_the_test": "Sign up to start the test",
-      "the_latest_tests": "The latest tests",
-      "to_be_continued": "To be continued",
-      "get_started": "Get started",
-      "selected_class": "Select a class",
-      "selected_subject": "Select a subject",
-      "selected_section": "Select a section",
-      "selected_topic": "Select a topic"
-    },
-    "footer": {
-      "teachers": "Teachers",
-      "students": "Students",
-      "parents": "Parents",
-      "olimpics": "Olimpics",
-      "country_olimpics": "Country olimpics",
-      "international_olimpics": "International olimpics",
-      "private_olimpics": "Private olimpics",
-      "international_competitions": "International competitions ",
-      "social_media": "Social Media:"
-    }
+  "navigation": {
+     "functions": "Functions",
+     "customers": "Our customers",
+     "request": "Request a demo",
+     "contacts": "Contacts"
+  
+  },
+  "answers":{
+    "answer_questions": "Answers to frequently asked questions",
+    "edutizm_platform": "What is the function of the EduSystem platform?",
+    "learning_center_description": "Help build a system at your training center. Consolidate data in paper and excel files to increase efficiency",
+    "learning_center_analytics": "Analyzes the status of your training center",
+    "learning_center_analytics_description": "Reports are very important for the development of the training center. You keep all reports through EDUTIZIM. You can plan your activities through your students, financial and marketing reports",
+    "customers_automates": "Automates customer service",
+    "customers_automates_description": "EDUTIZIM calculates leads from all sources and automates working with them",
+    "platform_demo": "The platform is available in Demo version.",
+    "platform_demo_description": "You can use the platform's features for free for 14 days through our Demo version",
+    "": ""
+  },
+  "mobile": {
+    "mobile_application_info": "Our mobile apps have made your job easier. Now you can work without too much effort"
+  },
+  "main":{
+    "button_name": "Request a demo",
+    "learning_center_system": "Management system for training centers",
+    "learning_center_info": "Helps build a system at your training center. Now you can easily keep track of your customers and employees. You will know all about them.",
+    "about_staff_salaries": "Now you don’t have to calculate the monthly for your employees and assign them a KPI. EDUTIZIM will help you. Get your financial statements through EDUTIZIM",
+    "android_app_for_customers": "There are android apps for your customers and employees. They get all the information through them"
+  },
+  "panel":{
+    "each_student": "With each of your readers",
+    "easy_work": "you work easily, plus",
+    "paper": "without papers",
+    "reader_complete_info": "Gathering more information about your student will help you. There is a risk of using exel and similar files, which can be lost. This is why programs are handy for storing such data",
+    "convenience_for_teachers": "Convenience for teachers",
+    "convenience_for_teachers_info": "Our teachers can monitor students' level of knowledge, attendance, attendance, and financial status under a contract with the training center over the phone in real time. This will help you save time and work effectively with customers"
+  },
+  "costomers":{
+    "costomers": "Our customers"
+  },
+  "footer": {
+    "request_demo_form": "Request a demo ",
+    "name": "Your name",
+    "phone_number": "Phone number",
+    "company_name": "Company name",
+    "being_sent": "is being sent",
+    "send": "send",
+    "our_social_networks": "Our social networks:"
   }
+}

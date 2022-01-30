@@ -11,9 +11,11 @@ import Front from "../../assets/images/mobile/inner_slider.png";
 import FirstPanel from "../../assets/images/mobile/first.png";
 import SecondPanel from "../../assets/images/mobile/second.png";
 import FrontThree from "../../assets/images/mobile/orders.png";
+import { useTranslation } from "react-i18next";
 export default function MobileView() {
   const [offset, setOffset] = useState(0);
   const [transform, setTransform] = useState(0);
+  const {t} = useTranslation()
 
   useEffect(() => {
     const onScroll = () => setOffset(window.pageYOffset);
@@ -36,8 +38,7 @@ export default function MobileView() {
     <MobileViewProvider className="reveal-animation">
       <MobileContent className="container my-5 py-5">
         <h2>
-          Mobil dasturlarimiz sizni ishingizni yanada osonlashtirildi. Endi
-          ortiqcha harakatlarsiz ishlay olasiz
+          {t("mobile.mobile_application_info")}
         </h2>
         <div className="row">
           <div className="col-lg-4 col-md-6">

@@ -12,8 +12,10 @@ import { MainCarousel } from "../carousel/main_carousel";
 import "./main.css";
 import { useSpring } from "react-spring";
 import Typing from "react-typing-animation";
+import { useTranslation } from "react-i18next";
 
 export default function MainComponent() {
+  const {t}=useTranslation()
   const calc = (x, y) => [
     -(y - window.innerHeight / 2) / 20,
     (x - window.innerWidth / 2) / 20,
@@ -31,12 +33,12 @@ export default function MainComponent() {
       <MainHeader>
         <MainTitle>
           <Typing speed={50}>
-            <h1>O’quv markazlar uchun boshqaruv tizimi</h1>
+            <h1>{t("main.learning_center_system")}</h1>
           </Typing>
         </MainTitle>
         <MainBtn>
           <button className="blob-btn">
-            Demo shaklini so’rash
+            {t("main.button_name")}
             <span className="blob-btn__inner">
               <span className="blob-btn__blobs">
                 <span className="blob-btn__blob"></span>
@@ -80,26 +82,21 @@ export default function MainComponent() {
           <div className="col-lg-4 col-md-6 col-12">
             <div className="main-content-info">
               <p>
-                O’quv markazingizda tizim qurishda yordam beradi. Endi bemalol
-                mijozlaringiz va hodimlaringizni kuzatib tura olasiz. Ular
-                haqida barcha ma’lumotga ega bo’lasiz.
+                {t("main.learning_center_info")}
               </p>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 col-12">
             <div className="main-content-info">
               <p>
-                Endi hodimlaringiz uchun oylik hisoblash va ularga KPI belgilash
-                shart emas. EDUTIZIM sizga yordam beradi. Moliyaviy
-                hisobotlaringizni EDUTIZIM orqali oling
+                {t("main.about_staff_salaries")}
               </p>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 col-12">
             <div className="main-content-info">
               <p>
-                Mijzolaringiz va hodimlaringiz uchun android ilovalar bor. Ular
-                orqali barcha ma’lumotlarga ega bo’lishadi
+                {t('main.android_app_for_customers')}
               </p>
             </div>
           </div>

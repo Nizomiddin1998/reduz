@@ -1,11 +1,51 @@
 {
   "navigation": {
-
+     "functions": "Functions",
+     "customers": "Our customers",
+     "request": "Request a demo",
+     "contacts": "Contacts"
+  
+  },
+  "answers":{
+    "answer_questions": "Ko’p so’raladigan savollarga javoblar",
+    "edutizm_platform": "EduTizim platformasi vazifasi nima?",
+    "learning_center_description": "O’quv markazingizda tizim qurishga yordam berish. Qog’oz va excel fayllardagi ma’lumotlarini bir joyda jamlab ish samaradorligini oshirishdan iborat",
+    "learning_center_analytics": "O’quv markazingiz holatini analitika qilib beradi",
+    "learning_center_analytics_description": "O’quv markaz rivojlanishi uchun hisobotlar juda muhim. EDUTIZIM orqali barcha hisobotlarni olib borasiz. O”quvchilaringiz, moliayviy va marketing hisobotlari orqali ishlaringizni rejalashtirishingiz mumkin",
+    "customers_automates": "Mijozlar bilan ishlashni avtomatlashtiradi",
+    "customers_automates_description": "EDUTIZIM barcha manbalardan kelgan lidlarni hisoblasydi va ular bilan ishlashni avtomatlashtiradi",
+    "platform_demo": "Platformani Demo versiyasidan foydalanish mumkin.",
+    "platform_demo_description": "Platforma imkoniyatlaridan Demo versiyamiz orqali 14 kun davomida bepul foydalanishingiz mumkin",
+    "": ""
   },
   "mobile": {
-
+    "mobile_application_info": "Mobil dasturlarimiz sizni ishingizni yanada osonlashtirildi. Endi ortiqcha harakatlarsiz ishlay olasiz"
+  },
+  "main":{
+    "button_name": "Demo shaklini so’rash",
+    "learning_center_system": "O’quv markazlar uchun boshqaruv tizimi",
+    "learning_center_info": "O’quv markazingizda tizim qurishda yordam beradi. Endi bemalol mijozlaringiz va hodimlaringizni kuzatib tura olasiz. Ular haqida barcha ma’lumotga ega bo’lasiz.",
+    "about_staff_salaries": "Endi hodimlaringiz uchun oylik hisoblash va ularga KPI belgilash shart emas. EDUTIZIM sizga yordam beradi. Moliyaviy hisobotlaringizni EDUTIZIM orqali oling",
+    "android_app_for_customers": "Mijzolaringiz va hodimlaringiz uchun android ilovalar bor. Ular orqali barcha ma’lumotlarga ega bo’lishadi"
+  },
+  "panel":{
+    "each_student": "Har bir o'quvchingiz bilan",
+    "easy_work": "oson ishlaysiz, ortiqcha",
+    "paper": "qog'ozlarsiz",
+    "reader_complete_info": "O’quvchingiz haqida to’liqroq ma’lumot yig’ish sizga foyda keltiradi. Buning uchun esa exel va shu kabi fayllardan foydalanish xavli, yo’qotib qo’yish ehtimoli bor. Shu sababdan bu kabi malumotlarni saqlashda dasturlar qulaydir",
+    "convenience_for_teachers": "O’qituvchilar uchun qulaylik",
+    "convenience_for_teachers_info": "O’qituvchilarimiz o’quvchilarni bilim darajasini, darslarga qatnashishini, davomatlarini va o’quv markaz bilan shartnomaga ko’ra moliyaviy holatini real vaqt rejimida telefon orqali ko’rib tura oladi. Bu esa sizga vaqt tejashga va mijozlar bilan samarali ishlashingizda yordam beradi"
+  },
+  "costomers":{
+    "costomers": "Our customers"
   },
   "footer": {
-
+    "request_demo_form": "Demo shaklini so‘rash",
+    "name": "Ismingiz",
+    "phone_number": "Telefon raqamingiz",
+    "company_name": "Kompaniya nomi",
+    "being_sent": "yuborilmoqda",
+    "send": "yuborish",
+    "our_social_networks": "Ijtimoiy tarmoqlarimiz:"
   }
 }

@@ -21,6 +21,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { css } from "@emotion/react";
 import ClockLoader from "react-spinners/ClockLoader";
 import { systemColors } from "../../assets/styles/colors";
+import { useTranslation } from "react-i18next";
 
 const override = css`
   display: inline-flex;
@@ -33,6 +34,7 @@ const bounce = cssTransition({
   exit: "animate__animated animate__bounceOut",
 });
 export default function FooterComponent() {
+  const {t} = useTranslation()
   const initialState = {
     firstName: "",
     phoneNumber: "",
@@ -80,11 +82,11 @@ export default function FooterComponent() {
   }
   return (
     <FooterProvider id="contact">
-      <FormTitle>Demo shaklini so‘rash</FormTitle>
+      <FormTitle>{t("footer.request_demo_form")}</FormTitle>
       <form onSubmit={handleSubmit}>
         <FormInputProvider className="container">
           <FormGroup>
-            <label>Ismingiz</label>
+            <label>{t("footer.name")}</label>
             <FooterInput
               type="text"
               name="firstName"
@@ -94,7 +96,7 @@ export default function FooterComponent() {
             />
           </FormGroup>
           <FormGroup>
-            <label>Telefon raqamingiz</label>
+            <label>{t("footer.phone_number")}</label>
             <FooterInput
               type="number"
               required
@@ -104,7 +106,7 @@ export default function FooterComponent() {
             />
           </FormGroup>
           <FormGroup>
-            <label>Kompaniya nomi</label>
+            <label>{t('footer.company_name')}</label>
             <FooterInput
               type="text"
               value={companyName}
@@ -119,10 +121,10 @@ export default function FooterComponent() {
             {isLoading ? (
               <>
                <ClockLoader color={systemColors.mainBlue} loading={isLoading} css={override} size={20} />
-                yuborilmoqda
+                {t("footer.being_sent")}
               </>
             ) : (
-              "yuborish"
+              `${t("footer.send")}`
             )}
           </button>
         </ButtonGroup>
@@ -132,7 +134,7 @@ export default function FooterComponent() {
             <span>+998 90 010-85-10</span>
           </div>
           <SocialMedia>
-            <p>Ijtimoiy tarmoqlarimiz:</p>
+            <p>{t("footer.our_social_networks")}</p>
             <span>
               <a>
                 <img src={Facebook} alt="facebook" />
