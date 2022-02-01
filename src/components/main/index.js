@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   MainProvider,
   MainHeader,
@@ -15,7 +16,7 @@ import Typing from "react-typing-animation";
 import { useTranslation } from "react-i18next";
 
 export default function MainComponent() {
-  const {t}=useTranslation()
+  const { t } = useTranslation();
   const calc = (x, y) => [
     -(y - window.innerHeight / 2) / 20,
     (x - window.innerWidth / 2) / 20,
@@ -28,11 +29,24 @@ export default function MainComponent() {
     xys: [0, 0, 1],
     config: { mass: 10, tension: 200, friction: 50 },
   }));
+  
+  // async function TypingFunction() {
+  //  if(localStorage.getItem("i18nextLng") === "uz") {
+  //    return <h1>O’quv markazlar uchun boshqaruv tizimi</h1>
+  //  } else {
+  //    return <h1>Our mobile apps have made your job easier. Now you can work without too much effort</h1>
+  //  }
+  // }
+  // useEffect(() => {
+  //   if (localStorage.getItem("i18nextLng")) {
+  //     TypingFunction()
+  //   }
+  // }, [localStorage.getItem("i18nextLng")]);
   return (
     <MainProvider>
       <MainHeader>
         <MainTitle>
-          <Typing speed={50}>
+          <Typing speed={30}>
             <h1>{t("main.learning_center_system")}</h1>
           </Typing>
         </MainTitle>
@@ -81,23 +95,17 @@ export default function MainComponent() {
         <div className="row">
           <div className="col-lg-4 col-md-6 col-12">
             <div className="main-content-info">
-              <p>
-                {t("main.learning_center_info")}
-              </p>
+              <p>{t("main.learning_center_info")}</p>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 col-12">
             <div className="main-content-info">
-              <p>
-                {t("main.about_staff_salaries")}
-              </p>
+              <p>{t("main.about_staff_salaries")}</p>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 col-12">
             <div className="main-content-info">
-              <p>
-                {t('main.android_app_for_customers')}
-              </p>
+              <p>{t("main.android_app_for_customers")}</p>
             </div>
           </div>
         </div>

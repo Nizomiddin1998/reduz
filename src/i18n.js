@@ -6,7 +6,7 @@ import { initReactI18next } from "react-i18next";
 
 
 i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
-    fallbackLng: "uz",
+    fallbackLng: localStorage.getItem("i18nextLng") ? localStorage.getItem("i18nextLng") : "uz",
     debug:true,
     detection: {
         order: ['queryString', 'cookie'],

@@ -1,15 +1,11 @@
-import { Fragment, useState, useEffect, useCallback } from "react";
+import {  useState, useEffect, useCallback } from "react";
 import {
   MobileViewProvider,
   MobileContent,
   BackContent,
-  FrontContent,
 } from "./style";
 import "./style.css";
-import BackgroundContent from "../../assets/images/mobile/iphoneX.png";
 import Front from "../../assets/images/mobile/inner_slider.png";
-import FirstPanel from "../../assets/images/mobile/first.png";
-import SecondPanel from "../../assets/images/mobile/second.png";
 import FrontThree from "../../assets/images/mobile/orders.png";
 import { useTranslation } from "react-i18next";
 export default function MobileView() {
@@ -24,15 +20,15 @@ export default function MobileView() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const reval = useCallback(() => {
+  const reveal = useCallback(() => {
     let revals = document.querySelectorAll(".image-wrap");
     let elementTop = revals[0].getBoundingClientRect().top;
     if (elementTop < 400 && elementTop > -800) {
-      setTransform((elementTop - 400) / 4);
+      setTransform((elementTop - 400) / 5);
     }
   }, [transform]);
 
-  window.addEventListener("scroll", reval);
+  window.addEventListener("scroll", reveal);
 
   return (
     <MobileViewProvider className="reveal-animation">

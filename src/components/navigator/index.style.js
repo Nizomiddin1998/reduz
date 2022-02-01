@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { systemColors } from "../../assets/styles/colors";
+import { Select } from "antd";
 
 export const Nav = styled.nav`
   width: calc(100% - 220.56px);
@@ -16,7 +17,18 @@ export const Nav = styled.nav`
     width: calc(100% - 20px);
   }
 `;
-
+export const AntdSelect = styled(Select)`
+color: ${systemColors.mainBlue} !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: 0.4s ease-in-out;
+  padding: 0 1rem;
+  margin-top: 13px;
+  font-size: 18.6px;
+`
 export const NavLink = styled.a`
   color: ${systemColors.mainBlue} !important;
   display: flex;
@@ -28,6 +40,10 @@ export const NavLink = styled.a`
   padding: 0 1rem;
   height: 10%;
   cursor: pointer;
+  &.antd-select {
+    font-weight: 500 !important;
+    color: ${systemColors.mainBlue} !important;
+  }
   &:after {
       content: "";
       position: absolute;

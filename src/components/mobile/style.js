@@ -64,8 +64,9 @@ export const MobileContent = styled.div`
   height: auto;
 `;
 export const BackContent = styled.div`
-  width: 100%;
-  height: 90vh;
+  width: 67%;
+  height: 70vh;
+  margin: 0 auto;
   background-size: cover;
   overflow: hidden;
   border-radius: 12px;
@@ -76,7 +77,7 @@ export const BackContent = styled.div`
   }
   .image-wrap {
     width: 100%;
-    height: 83vh;
+    height: 64vh;
     overflow: hidden;
     .front {
       width: 100%;
@@ -85,17 +86,17 @@ export const BackContent = styled.div`
       opacity: 1;
     }
   }
-  @media (max-width: 676px) {
-    width: 90%;
-    height: 90vh;
+  @media (max-width: 576px) {
+    width: 55%;
+    height: 60vh;
     margin: 0 auto;
     .image-wrap {
       width: 100%;
-      height: 84vh;
+      height: 55vh;
     }
   }
   @media (max-width: 400px) {
-    width: 80%;
+    width: 70%;
     height: 60vh;
     .image-wrap {
       height: 55vh;

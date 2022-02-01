@@ -1,21 +1,17 @@
 import { useState, useEffect } from "react";
-import {
-  Nav,
-  NavLink,
-  BtnLink,
-  MobileIcon,
-  NavMenu,
-} from "./index.style";
+import { Nav, NavLink, AntdSelect, MobileIcon, NavMenu } from "./index.style";
 import { Twirl as Hamburger } from "hamburger-react";
-import Select from "react-select"
-import logoTip from "../../assets/icons/logo.svg"
-import { useTranslation } from "react-i18next"
+
+import logoTip from "../../assets/icons/logo.svg";
+import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
+import { Select } from "antd";
+import "antd/dist/antd.css";
 export default function Navbar() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-
+  const { Option } = Select;
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -31,9 +27,10 @@ export default function Navbar() {
   const handleClick = () => {
     setClick(!click);
   };
-  function changeLanguage(e){
-    i18n.changeLanguage(e.target.value)
-  }
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+    // localStorage.setItem("language", language);
+};
 
   return (
     <div>
@@ -64,12 +61,19 @@ export default function Navbar() {
             <button className="nav-btn">{t("navigation.contacts")}</button>
           </NavLink>
           <NavLink to="/sign-up">
-            {/* <button className="nav-btn">Uzbek</button> */}
-            {/* <Select className="nav-btn react-select" placeholder={"Uzbek"} /> */}
-            <select className="nav-btn  language-select" onClick={changeLanguage}>
-              <option value="uz">Uzbek</option>
-              <option value="en">English</option>
-            </select>
+            <AntdSelect
+              className="antd-select"
+              defaultValue={
+                localStorage.getItem("i18nextLng")
+                  ? localStorage.getItem("i18nextLng")
+                  : "uz"
+              }
+              style={{ width: 120 }}
+              onChange={changeLanguage}
+            >
+              <Option value="uz">Uzbek</Option>
+              <Option value="en">English</Option>
+            </AntdSelect>
           </NavLink>
         </NavMenu>
       </Nav>
